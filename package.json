@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-hello-world",
-  "version": "1.0.0",
-  "description": "Hello world",
+  "name": "nuxt-shop-demo",
+  "version": "0.1.0",
+  "description": "Simple shop",
   "author": "Roman Tupikov",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "bulma": "^0.6.2",
     "nuxt": "^1.4.0"
   },
   "devDependencies": {
@@ -28,6 +29,8 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "^4.3.0"
+    "eslint-plugin-vue": "^4.3.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7"
   }
 }
