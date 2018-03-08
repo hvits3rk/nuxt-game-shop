@@ -30,6 +30,10 @@ module.exports = {
     'bulma',
   ],
 
+  router: {
+    linkActiveClass: 'is-active',
+  },
+
   /*
   ** Plugins to load before mounting the App
   */

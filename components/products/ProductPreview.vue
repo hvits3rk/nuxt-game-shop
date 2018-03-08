@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="`product/${id}`">
+  <nuxt-link :to="`/product/${id}`">
     <div class="card">
       <div class="card-image">
         <figure class="image">
