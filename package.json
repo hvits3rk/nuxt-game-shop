@@ -7,10 +7,13 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "bulma": "^0.6.2",
@@ -31,6 +34,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.3.0",
     "node-sass": "^4.7.2",
+    "push-dir": "^0.4.1",
     "sass-loader": "^6.0.7"
   }
 }

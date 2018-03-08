@@ -1,6 +1,21 @@
 const pkg = require('./package');
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
+  ? {
+    router: {
+      linkActiveClass: 'is-active',
+      base: '/nuxt-game-shop/',
+    },
+  }
+  : {
+    router: {
+      linkActiveClass: 'is-active',
+    },
+  };
+
+
 module.exports = {
+  ...routerBase,
   mode: 'universal',
 
   /*
@@ -29,10 +44,6 @@ module.exports = {
   css: [
     'bulma',
   ],
-
-  router: {
-    linkActiveClass: 'is-active',
-  },
 
   /*
   ** Plugins to load before mounting the App
