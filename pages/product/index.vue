@@ -1,6 +1,8 @@
 <template>
   <section class="section">
-    <product-list/>
+    <div class="container">
+      <product-list/>
+    </div>
   </section>
 </template>
 

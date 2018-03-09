@@ -1,7 +1,16 @@
 <template>
-  <section class="section">
-    <product-list/>
-  </section>
+  <div>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Featured Games</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <product-list/>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
