@@ -4,9 +4,9 @@
       <nav class="tabs is-boxed">
         <div class="container">
           <ul>
-            <nuxt-link to="/" tag="li" exact><a>Home</a></nuxt-link>
-            <nuxt-link to="/product" tag="li"><a>Game List</a></nuxt-link>
-            <nuxt-link to="/about" tag="li"><a>About</a></nuxt-link>
+            <nuxt-link to="/" tag="li" exact><a>ГЛАВНАЯ</a></nuxt-link>
+            <nuxt-link to="/product" tag="li"><a>МАГАЗИН</a></nuxt-link>
+            <nuxt-link to="/support" tag="li"><a>ПОДДЕРЖКА</a></nuxt-link>
           </ul>
         </div>
       </nav>

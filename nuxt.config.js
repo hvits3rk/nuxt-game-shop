@@ -43,6 +43,7 @@ module.exports = {
   */
   css: [
     'bulma',
+    '~assets/styles/effects.css'
   ],
 
   /*
@@ -81,4 +82,8 @@ module.exports = {
       },
     },
   },
+  transition: {
+    name: 'fade',
+    mode: 'out-in',
+  }
 };
