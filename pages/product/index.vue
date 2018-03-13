@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <product-list/>
+      <product-list :gameList="loadedGames"/>
     </div>
   </section>
 </template>
@@ -13,6 +13,11 @@ export default {
   name: 'ProductsPage',
   components: {
     ProductList,
+  },
+  computed: {
+    loadedGames() {
+      return this.$store.getters.loadedGames;
+    },
   },
 };
 </script>

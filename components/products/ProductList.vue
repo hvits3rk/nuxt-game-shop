@@ -23,9 +23,11 @@ export default {
   components: {
     ProductPreview,
   },
-  data() {
-    return {
-    };
+  props: {
+    gameList: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>

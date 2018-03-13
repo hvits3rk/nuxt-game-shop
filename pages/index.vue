@@ -7,7 +7,7 @@
     </section>
     <section class="section">
       <div class="container">
-        <product-list/>
+        <product-list :gameList="loadedGames"/>
       </div>
     </section>
   </div>
@@ -20,6 +20,11 @@ export default {
   name: 'HomePage',
   components: {
     ProductList,
+  },
+  computed: {
+    loadedGames() {
+      return this.$store.getters.loadedGames;
+    },
   },
 };
 </script>

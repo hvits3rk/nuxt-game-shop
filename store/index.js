@@ -1,7 +1,7 @@
 import vuex from 'vuex';
 import dummyData from '~/static/dummyData';
 
-export default new vuex.Store({
+export default () => new vuex.Store({
   state: {
     games: [],
   },
