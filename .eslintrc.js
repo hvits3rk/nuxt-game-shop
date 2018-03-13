@@ -17,6 +17,16 @@ module.exports = {
       vue: 'never',
     }],
   },
+  overrides: [
+    {
+      files: ['store/*.js', 'plugins/*.js', 'middleware/*.js'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+        'no-param-reassign': 'off',
+        'no-unused-vars': 'off',
+      },
+    },
+  ],
   globals: {},
   settings: {
     'import/resolver': {
