@@ -38,7 +38,7 @@
                     </select>
                   </div>
                   <span class="icon is-small is-left">
-                    <i class="fas fa-globe"></i>
+                    <font-awesome-icon :icon="['fas', 'language']" />
                   </span>
                 </div>
               </div>
@@ -51,7 +51,7 @@
                     </select>
                   </div>
                   <span class="icon is-small is-left">
-                    <i class="fas fa-dollar-sign"></i>
+                    <font-awesome-icon :icon="['fas', 'ruble-sign']" />
                   </span>
                 </div>
               </div>
@@ -96,37 +96,37 @@
   <div class="container">
     <div class="columns is-multiline is-centered">
       <div class="column is-narrow has-text-centered-touch">
-        <a class="button is-medium">
+        <a class="has-text-grey">
           <span class="icon is-medium">
-            <i class="fas fa-heading fa-2x"></i>
+            <font-awesome-icon :icon="['fab', 'vk']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="button is-medium">
+        <a class="has-text-grey">
           <span class="icon is-medium">
-            <i class="fas fa-heading fa-2x"></i>
+            <font-awesome-icon :icon="['fab', 'facebook']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="button is-medium">
+        <a class="has-text-grey">
           <span class="icon is-medium">
-            <i class="fas fa-heading fa-2x"></i>
+            <font-awesome-icon :icon="['fab', 'discord']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="button is-medium">
+        <a class="has-text-grey">
           <span class="icon is-medium">
-            <i class="fas fa-heading fa-2x"></i>
+            <font-awesome-icon :icon="['fab', 'twitter-square']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="button is-medium">
+        <a class="has-text-grey">
           <span class="icon is-medium">
-            <i class="fas fa-heading fa-2x"></i>
+            <font-awesome-icon :icon="['fab', 'youtube']" size="2x" />
           </span>
         </a>
       </div>
