@@ -7,19 +7,19 @@
         <div class="level-item">
           <div class="columns">
             <div class="column is-narrow has-text-centered-touch">
-              <a class="is-size-6 has-text-dark">АКТИВИРОВАТЬ КОД</a>            
+              <a class="is-size-6">АКТИВИРОВАТЬ КОД</a>
             </div>
             <div class="column is-narrow has-text-centered-touch">
-              <a class="is-size-6 has-text-dark">АКТИВИРОВАТЬ ИГРУ</a>
+              <a class="is-size-6">АКТИВИРОВАТЬ ИГРУ</a>
             </div>
             <div class="column is-narrow has-text-centered-touch">
-              <a class="is-size-6 has-text-dark">КОНТАКТЫ</a>
+              <a class="is-size-6">КОНТАКТЫ</a>
             </div>
             <div class="column is-narrow has-text-centered-touch">
-              <a class="is-size-6 has-text-dark">ВАКАНСИИ</a>
+              <a class="is-size-6">ВАКАНСИИ</a>
             </div>
             <div class="column is-narrow has-text-centered-touch">
-              <a class="is-size-6 has-text-dark">ПРЕДЛОЖИТЬ ИГРУ</a>
+              <a class="is-size-6">ПРЕДЛОЖИТЬ ИГРУ</a>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@
               <div class="field is-narrow">
                 <div class="control has-icons-left">
                   <div class="select is-light is-small">
-                    <select class="has-text-grey" name="select-language" id="select-language">
+                    <select class="my-low-link" name="select-language" id="select-language">
                       <option value="ru" selected>Русский</option>
                       <option value="en">English</option>
                     </select>
@@ -45,7 +45,7 @@
               <div class="field is-narrow">
                 <div class="control has-icons-left">
                   <div class="select is-light is-small">
-                    <select class="has-text-grey" name="select-currency" id="select-currency">
+                    <select class="my-low-link" name="select-currency" id="select-currency">
                       <option value="rub" selected>RUB</option>
                       <option value="usd">USD</option>
                     </select>
@@ -60,35 +60,34 @@
         </div>
       </div>
     </div>
+    <hr>    
   </div>
-
-  <hr>
 
   <div class="container">
     <div class="columns">
       <div class="column">
-        <p><a class="has-text-dark">ИГРЫ</a></p>
-        <p><a class="is-size-7 has-text-grey">СО СКИДКОЙ</a></p>
-        <p><a class="is-size-7 has-text-grey">ЛИДЕРЫ ПРОДАЖ</a></p>
-        <p><a class="is-size-7 has-text-grey">Свежие релизы</a></p>
-        <p><a class="is-size-7 has-text-grey">Высоко оцененные</a></p>
+        <p><a class="is-size-6">ИГРЫ</a></p>
+        <p><a class="is-size-7 my-low-link">СО СКИДКОЙ</a></p>
+        <p><a class="is-size-7 my-low-link">ЛИДЕРЫ ПРОДАЖ</a></p>
+        <p><a class="is-size-7 my-low-link">Свежие релизы</a></p>
+        <p><a class="is-size-7 my-low-link">Высоко оцененные</a></p>
       </div>
       <div class="column">
-        <p><a class="has-text-dark">ПОДДЕРЖКА</a></p>
-        <p><a class="is-size-7 has-text-grey">FAQ сайта</a></p>
-        <p><a class="is-size-7 has-text-grey">Поддержка</a></p>
-        <p><a class="is-size-7 has-text-grey">Правила</a></p>
-        <p><a class="is-size-7 has-text-grey">Контакты</a></p>
+        <p><a class="is-size-6">ПОДДЕРЖКА</a></p>
+        <p><a class="is-size-7 my-low-link">FAQ сайта</a></p>
+        <p><a class="is-size-7 my-low-link">Поддержка</a></p>
+        <p><a class="is-size-7 my-low-link">Правила</a></p>
+        <p><a class="is-size-7 my-low-link">Контакты</a></p>
       </div>
       <div class="column">
-        <p><a class="has-text-dark">МОЙ ПРОФИЛЬ</a></p>
-        <p><a class="is-size-7 has-text-grey">Моя библиотека</a></p>
-        <p><a class="is-size-7 has-text-grey">Заказы и настройки</a></p>
+        <p><a class="is-size-6">МОЙ ПРОФИЛЬ</a></p>
+        <p><a class="is-size-7 my-low-link">Моя библиотека</a></p>
+        <p><a class="is-size-7 my-low-link">Заказы и настройки</a></p>
       </div>
       <div class="column">
-        <p><a class="has-text-dark">СООБЩЕСТВО</a></p>
-        <p><a class="is-size-7 has-text-grey">Форумы</a></p>
-        <p><a class="is-size-7 has-text-grey">Желания сообщества</a></p>
+        <p><a class="is-size-6">СООБЩЕСТВО</a></p>
+        <p><a class="is-size-7 my-low-link">Форумы</a></p>
+        <p><a class="is-size-7 my-low-link">Желания сообщества</a></p>
       </div>
     </div>
   </div>
@@ -96,54 +95,61 @@
   <div class="container">
     <div class="columns is-multiline is-centered">
       <div class="column is-narrow has-text-centered-touch">
-        <a class="has-text-grey">
-          <span class="icon is-medium">
+        <a class="my-low-link">
+          <span class="icon is-medium icon-vk">
             <font-awesome-icon :icon="['fab', 'vk']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="has-text-grey">
-          <span class="icon is-medium">
+        <a class="my-low-link">
+          <span class="icon is-medium icon-facebook">
             <font-awesome-icon :icon="['fab', 'facebook']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="has-text-grey">
-          <span class="icon is-medium">
+        <a class="my-low-link">
+          <span class="icon is-medium icon-discord">
             <font-awesome-icon :icon="['fab', 'discord']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="has-text-grey">
-          <span class="icon is-medium">
+        <a class="my-low-link">
+          <span class="icon is-medium icon-twitter">
             <font-awesome-icon :icon="['fab', 'twitter-square']" size="2x" />
           </span>
         </a>
       </div>
       <div class="column is-narrow has-text-centered-touch">
-        <a class="has-text-grey">
-          <span class="icon is-medium">
+        <a class="my-low-link">
+          <span class="icon is-medium icon-youtube">
             <font-awesome-icon :icon="['fab', 'youtube']" size="2x" />
           </span>
         </a>
       </div>
     </div>
+    <hr>    
   </div>
-
-  <hr>
 
   <div class="container">
     <div class="level">
       <div class="level-left">
         <div class="level-item">
-          <div class="buttons">
-            <span class="button is-small is-text">Правовая информация</span>
-            <span class="button is-small is-text">Реорганизация компании</span>
-            <span class="button is-small is-text">Политика cookie</span>
-            <span class="button is-small is-text">Благодарности</span>
+          <div class="columns is-multiline">
+            <div class="column is-narrow">
+              <p><a class="is-size-7 my-low-link">Правовая информация</a></p>
+            </div>
+            <div class="column is-narrow">
+              <p><a class="is-size-7 my-low-link">Реорганизация компании</a></p>
+            </div>
+            <div class="column is-narrow">
+              <p><a class="is-size-7 my-low-link">Политика cookie</a></p>
+            </div>
+            <div class="column is-narrow">
+              <p><a class="is-size-7 my-low-link">Благодарности</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -165,6 +171,42 @@ export default {
 </script>
 
 <style scoped>
+div a.is-size-6 {
+  color: #546E7A;
+}
+div a.is-size-6:hover {
+  color: #263238;
+}
 
+.my-low-link {
+  color: #90A4AE;
+}
+
+.my-low-link:hover {
+  color: #455A64;
+}
+
+.icon-youtube:hover {
+  color: #F44336;
+}
+
+.icon-twitter:hover {
+  color: #00aced;
+}
+
+.icon-discord:hover {
+  color: #7289DA;
+}
+
+.icon-facebook:hover {
+  color: 	#3b5998;
+}
+
+.icon-vk:hover {
+  color: #4E729A;
+}
+
+.not-done {
+  text-decoration: line-through;
+}
 </style>
-
