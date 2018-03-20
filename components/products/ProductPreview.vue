@@ -1,19 +1,23 @@
 <template>
-  <nuxt-link :to="`/product/${id}`">
-    <div class="card">
-      <div class="card-image">
-        <figure class="image">
-          <img
-            :src="thumbnail"
-            alt="Game preview">
-        </figure>
-      </div>
-      <div class="card-content">
-        <p class="title is-4">{{ title }}</p>
-        <div class="content">{{ previewText }}</div>
-      </div>
+    <div class="card card-equal-height">
+      <nuxt-link :to="`/product/${id}`">
+        <div class="card-image">
+          <figure class="image">
+            <img
+              :src="thumbnail"
+              alt="Game preview">
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-4">{{ title }}</p>
+          <div class="content">{{ previewText }}</div>
+        </div>
+      </nuxt-link>
+      <footer class="card-footer">
+        <a class="card-footer-item">КУПИТЬ</a>
+      </footer>
     </div>
-  </nuxt-link>
+  
 </template>
 
 <script>
@@ -41,6 +45,13 @@ export default {
 </script>
 
 <style scoped>
-
+.card-equal-height {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.card-equal-height .card-footer {
+   margin-top: auto;
+}
 </style>
 
