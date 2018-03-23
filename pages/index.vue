@@ -7,7 +7,17 @@
     </section>
     <section class="section">
       <div class="container">
-        <product-list :gameList="loadedGames"/>
+        <product-list :gameList="featuredGames"/>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li v-for="(genre, key) in genres" :key="key" @click="selectGenre(key)"><a>{{ genre }}</a></li>
+          </ul>
+        </div>
+        <product-list :gameList="filteredGames"/>
       </div>
     </section>
   </div>
@@ -21,9 +31,28 @@ export default {
   components: {
     ProductList,
   },
+  data() {
+    return {
+      curFilter: 'all',
+    };
+  },
   computed: {
-    loadedGames() {
-      return this.$store.getters.loadedGames;
+    filteredGames() {
+      /* eslint-disable prefer-destructuring */
+      const loadedGames = this.$store.getters.loadedGames;
+      if (this.curFilter === 'all') return loadedGames;
+      return loadedGames.filter(game => game.genre.includes(this.curFilter));
+    },
+    featuredGames() {
+      return this.$store.getters.loadedGames.filter(game => game.isFeatured);
+    },
+    genres() {
+      return this.$store.getters.genres;
+    },
+  },
+  methods: {
+    selectGenre(genre) {
+      this.curFilter = genre;
     },
   },
 };
